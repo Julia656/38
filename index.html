@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>38</title>
+  
+    
+<body>
+  <body class="light">
+
+    <header>
+      <nav>
+        <a href="#/" onclick="navigate('home')">Головна</a>
+        <a href="#/contacts" onclick="navigate('contacts')">Контакти</a>
+        <a href="#/about" onclick="navigate('about')">Про мене</a>
+      </nav>
+      <button onclick="toggleTheme()">Змінити тему</button>
+    </header>
+    
+    <div class="container">
+      <div class="error-box" id="errorBox"></div>
+    
+      <section id="home">
+        <h2>Список завдань</h2>
+        <input type="text" id="taskInput" placeholder="Нове завдання">
+        <button onclick="addTask()">Додати</button>
+        <ul id="taskList"></ul>
+      </section>
+    
+      <section id="contacts" class="hidden">
+        <h2>Контакти</h2>
+        <p>Email: info@example.com</p>
+        <p>Телефон: +380123456789</p>
+      </section>
+    
+      <section id="about" class="hidden">
+        <h2>Про мене</h2>
+        <p>Я — розробник SPA-додатків з досвідом роботи з JavaScript та UI-дизайном.</p>
+      </section>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
